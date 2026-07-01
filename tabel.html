@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabel Data Layanan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1>Sistem Input Data Layanan</h1>
+      <div class="nav-links">
+        <a href="index.html">Form Input</a>
+        <a href="tabel.html" class="active">Tabel Data</a>
+      </div>
+    </nav>
+
+    <main class="card">
+      <div class="table-header">
+        <h2>Tabel Data</h2>
+        <button id="clearAllBtn" class="btn btn-danger">Hapus Semua Data</button>
+      </div>
+      <p class="subtitle">Berikut adalah data yang telah diinput melalui form.</p>
+
+      <div class="table-wrapper">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Jenis Layanan</th>
+              <th>Keterangan</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Data diisi otomatis lewat JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <p id="emptyMsg" class="empty-msg">Belum ada data. Silakan input data terlebih dahulu.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Sistem Web Sederhana - Tugas SUB-CPMK-07-2-8</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
